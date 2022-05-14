@@ -1,0 +1,442 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 375px;
+  min-height: 667px;
+  margin: 1em 0;
+}
+
+.app .landing-page {
+  height: 100%;
+  background-color: #38846D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .landing-page .bg-right, .app .landing-page .bg-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  float: right;
+}
+
+.app .landing-page .bg-left {
+  right: unset;
+  left: 0;
+  float: left;
+}
+
+.app .menu {
+  background-color: #F3E4E1;
+}
+
+.app .menu .bag {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: #2F2926;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  z-index: 49;
+}
+
+.app .menu .bag div {
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  padding: .3em .6em;
+  background-color: #E5674E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+.app .menu .bag img {
+  position: inherit;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  height: 1em;
+}
+
+.app .menu > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  margin: 4em auto 0.5em auto;
+}
+
+.app .menu .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0em 2em 2em 2em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 23em;
+}
+
+.app .menu .list .coffee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 1em 2em 1em 2em;
+}
+
+.app .menu .list .coffee:hover {
+  cursor: pointer;
+}
+
+.app .menu .list .coffee div:first-of-type {
+  background-color: #2F2926;
+  width: 1.5em;
+  height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: .3em;
+  margin-top: 1em;
+}
+
+.app .menu .list .coffee div:first-of-type img {
+  height: 1em;
+  width: 1em;
+}
+
+.app .menu .list .coffee div:last-of-type {
+  min-width: 50%;
+  margin-left: 1em;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .menu .list .coffee div:last-of-type > p {
+  margin: 0;
+  margin-top: .5em;
+  font-size: 18px;
+  padding: 0;
+}
+
+.app .menu .list .coffee div:last-of-type > span {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.app .menu .list .coffee > p {
+  padding: 0;
+  margin: 0;
+  padding-left: .3em;
+  min-width: 20%;
+  font-size: 18px;
+  text-align: right;
+}
+
+.app .menu .bg-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.app .menu .bg-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.app .menu .cart {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  height: calc(100% - 5em);
+  width: calc(100% - 2em);
+  background-color: #FFFFFF;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .menu .cart:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: .8em;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FFFFFF;
+}
+
+.app .menu .cart > h2 {
+  font-size: 35px;
+  margin: 1em 0;
+}
+
+.app .menu .cart .order-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.app .menu .cart .order-list .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 4em;
+  width: 90%;
+}
+
+.app .menu .cart .order-list .order .info {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .menu .cart .order-list .order .info > p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.app .menu .cart .order-list .order .info > span {
+  font-size: 12px;
+}
+
+.app .menu .cart .order-list .order .action {
+  width: 10%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .menu .cart .order-list .order .action > p {
+  width: 2em;
+  height: 1em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: .2em;
+  font-size: 14px;
+}
+
+.app .menu .cart .order-list .order .action .inc-order, .app .menu .cart .order-list .order .action .dec-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .5em;
+}
+
+.app .menu .cart .order-list .order .action .inc-order:hover, .app .menu .cart .order-list .order .action .dec-order:hover {
+  cursor: pointer;
+}
+
+.app .menu .total {
+  width: 90%;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.app .menu .total > div > p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.app .menu .total > div > span {
+  font-size: 12px;
+}
+
+.app .menu .total > p {
+  font-size: 20px;
+}
+
+.app .menu .take-money {
+  margin-top: 2em;
+  text-decoration: none;
+  padding: .6em 2em;
+  border-radius: 5em;
+  background-color: #2F2926;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.app .status {
+  background-color: #E5674E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .status > span {
+  color: #FFFFFF;
+  font-weight: 400;
+  margin: 4em 0;
+}
+
+.app .status img {
+  margin-bottom: 2em;
+}
+
+.app .status h2 {
+  font-size: 35px;
+  width: 70%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: .3em;
+}
+
+.app .status p {
+  color: #FFFFFF;
+  font-size: 17px;
+  margin-bottom: 4em;
+}
+
+.app .status a {
+  background-color: #FFFFFF;
+  padding: .5em 2em;
+  border-radius: 5em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.app .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2F2926;
+  opacity: .7;
+  z-index: 20;
+}
+/*# sourceMappingURL=style.css.map */
